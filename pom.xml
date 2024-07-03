@@ -36,6 +36,22 @@
 
 	</dependencies>
 
+	<distributionManagement>
+	
+	    <repository>
+	      <id>nexus</id>
+	      <name>vamsi Releases Nexus Repository</name>
+	      <url>http://172.31.7.71:8081/repository/insta-relese/</url>
+	    </repository>
+	    
+	    <snapshotRepository>
+	      <id>nexus</id>
+	      <name>vamsi Snapshot Nexus Repository </name>
+	      <url>http://172.31.7.71:8081/repository/insta-snapshot/</url>
+	    </snapshotRepository>
+	    
+	</distributionManagement>
+
 	<!-- Committing and updating changes through Maven, by using below mvn command. 
 		For Commiting mvn -Dmessage="Updated using maven" scm:checkin For updating 
 		mvn scm:update -->
